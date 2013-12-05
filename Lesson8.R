@@ -37,12 +37,14 @@ unzip(file.path(datdir, "Lesson8_YanZeng.zip"), exdir = datdir)
 # save(LandCover,file='ModisLandCover.RData')
 # save(modis,file='ModisDataofyear2012.RData')
 
+
 load('ClassTableofModisLandCover.RData')
 load('ModisDataofyear2012.RData')
 load('ModisLandCover.RData')
 
 
 ##call function
+##if the load do not work ,run the commend code
 MakeHistofMean(modis,LandCover)
 TimeSeriesofModis(modis,LandCover,ClassTable)
 
