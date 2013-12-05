@@ -3,7 +3,7 @@
 ##title:sub function 
 ##MeanofImage,Brick,GetMeanPerClass
 
-##read rom dropbox
+##read from dropbox
 dl_from_dropbox <- function(x, key) {
   require(RCurl)
   bin <- getBinaryURL(paste0("https://dl.dropboxusercontent.com/s/", key, "/", x),           
